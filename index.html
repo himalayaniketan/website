@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4a0b12">
+  <title>Mataji</title>
+  <style>
+    :root {
+      --maroon: #4a0b12;
+      --deep-maroon: #260509;
+      --gold: #d6ad58;
+      --cream: #fff1d2;
+    }
+    * { box-sizing: border-box; }
+    html, body { min-height: 100%; margin: 0; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--deep-maroon);
+      color: var(--cream);
+    }
+    main {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 32px 20px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 43%, rgba(180, 91, 42, .42) 0%, rgba(110, 20, 20, .18) 34%, transparent 68%),
+        linear-gradient(145deg, #64131b 0%, var(--maroon) 48%, #260509 100%);
+    }
+    main::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(214, 173, 88, .28);
+      pointer-events: none;
+    }
+    .lotus {
+      width: clamp(76px, 12vw, 112px);
+      height: auto;
+      margin-bottom: 22px;
+      filter: drop-shadow(0 5px 18px rgba(0, 0, 0, .18));
+    }
+    h1 {
+      margin: 0;
+      color: #fff4dc;
+      font-size: clamp(3.5rem, 10vw, 6.8rem);
+      font-weight: 500;
+      letter-spacing: .035em;
+      line-height: 1.05;
+      text-shadow: 0 3px 24px rgba(0, 0, 0, .18);
+    }
+    .ornament {
+      width: 86px;
+      height: 1px;
+      margin-top: 28px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    @media (max-width: 480px) {
+      main::before { inset: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main aria-label="Mataji">
+    <svg class="lotus" viewBox="0 0 120 100" role="img" aria-label="Lotus flower" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#e6c474" stroke="#f7dfa0" stroke-width="1.2" stroke-linejoin="round">
+        <path d="M60 82 C43 65 43 37 60 10 C77 37 77 65 60 82Z"/>
+        <path d="M55 82 C32 72 20 49 25 28 C47 39 58 60 55 82Z"/>
+        <path d="M65 82 C88 72 100 49 95 28 C73 39 62 60 65 82Z"/>
+        <path d="M49 84 C26 84 10 70 5 52 C29 53 44 65 49 84Z"/>
+        <path d="M71 84 C94 84 110 70 115 52 C91 53 76 65 71 84Z"/>
+        <path d="M60 84 C43 91 27 90 15 81 C34 75 48 77 60 84Z"/>
+        <path d="M60 84 C77 91 93 90 105 81 C86 75 72 77 60 84Z"/>
+      </g>
+      <path d="M19 91 Q60 98 101 91" fill="none" stroke="#d6ad58" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <h1>Mataji</h1>
+    <div class="ornament" aria-hidden="true"></div>
+  </main>
+</body>
+</html>
