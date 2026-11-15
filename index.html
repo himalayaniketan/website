@@ -1,87 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#4a0b12">
-  <title>Mataji</title>
-  <style>
-    :root {
-      --maroon: #4a0b12;
-      --deep-maroon: #260509;
-      --gold: #d6ad58;
-      --cream: #fff1d2;
-    }
-    * { box-sizing: border-box; }
-    html, body { min-height: 100%; margin: 0; }
-    body {
-      font-family: Georgia, "Times New Roman", serif;
-      background: var(--deep-maroon);
-      color: var(--cream);
-    }
-    main {
-      min-height: 100svh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 32px 20px;
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(ellipse at 50% 43%, rgba(180, 91, 42, .42) 0%, rgba(110, 20, 20, .18) 34%, transparent 68%),
-        linear-gradient(145deg, #64131b 0%, var(--maroon) 48%, #260509 100%);
-    }
-    main::before {
-      content: "";
-      position: absolute;
-      inset: 18px;
-      border: 1px solid rgba(214, 173, 88, .28);
-      pointer-events: none;
-    }
-    .lotus {
-      width: clamp(76px, 12vw, 112px);
-      height: auto;
-      margin-bottom: 22px;
-      filter: drop-shadow(0 5px 18px rgba(0, 0, 0, .18));
-    }
-    h1 {
-      margin: 0;
-      color: #fff4dc;
-      font-size: clamp(3.5rem, 10vw, 6.8rem);
-      font-weight: 500;
-      letter-spacing: .035em;
-      line-height: 1.05;
-      text-shadow: 0 3px 24px rgba(0, 0, 0, .18);
-    }
-    .ornament {
-      width: 86px;
-      height: 1px;
-      margin-top: 28px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    }
-    @media (max-width: 480px) {
-      main::before { inset: 12px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#4a0b12">
+<title>Mataji | Ma Someshwari Devi | Himalayan Spiritual Master</title>
+<meta name="description" content="Mataji (Ma Someshwari Devi) is a Himalayan spiritual master. Discover her life, Himalaya Niketan Ashram and Trust, clinics, and upcoming programs and retreats.">
+<link rel="canonical" href="https://srimataji.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="srimataji.com">
+<meta property="og:title" content="Mataji | Ma Someshwari Devi | Himalayan Spiritual Master">
+<meta property="og:description" content="Mataji (Ma Someshwari Devi) is a Himalayan spiritual master. Discover her life, Himalaya Niketan Ashram and Trust, clinics, and upcoming programs and retreats.">
+<meta property="og:url" content="https://srimataji.com/">
+<meta property="og:image" content="https://srimataji.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&amp;family=Great+Vibes&amp;family=Lato:wght@300;400;700&amp;display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://srimataji.com/#website", "url": "https://srimataji.com/", "name": "Mataji | srimataji.com"}, {"@type": "Person", "@id": "https://srimataji.com/#mataji", "name": "Mataji", "alternateName": ["Ma Someshwari Devi", "Dr. Monika Parsheera"], "url": "https://srimataji.com/", "description": "Himalayan spiritual master known to her devotees as Mataji and to Saints and Pirs as Ma Someshwari Devi."}]}</script>
+<!--
+ SRIMATAJI.COM — HOMEPAGE TEMPLATE
+ WordPress: Pages > Add New > "+" > Custom HTML > paste this whole file > Publish.
+ Tip: set the page template to "Full width / No title" if your theme offers it.
+ PHOTOS: search for "PHOTO_URL" below and replace each with a link to Mataji's photo from Media Library.
+
+ THIS FILE IS A COMPLETE PAGE (for GitHub Pages or any host). If pasting into a WordPress Custom HTML block instead, paste only the <style> block and everything inside <body>.
+-->
+<style>
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+.ms-root{--maroon:#6e1414;--saffron:#d9822b;--gold:#c79a3b;--cream:#fdf6e9;--ink:#3a2a22;font-family:'Lato',Georgia,sans-serif;color:var(--ink);line-height:1.8;font-size:17px;overflow:hidden}
+.ms-root *{box-sizing:border-box}
+html{scroll-behavior:smooth}
+.ms-paths,.ms-cta{scroll-margin-top:20px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.ms-root h1,.ms-root h2,.ms-root h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;margin:0;line-height:1.15}
+.ms-wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+.ms-eyebrow{letter-spacing:.35em;font-size:12px;font-weight:700;color:var(--gold);text-transform:uppercase;margin:0 0 14px}
+.ms-btn{display:inline-block;padding:14px 34px;border-radius:40px;font-weight:700;letter-spacing:.08em;font-size:14px;text-decoration:none;text-transform:uppercase;transition:.3s}
+.ms-btn.gold{background:linear-gradient(135deg,var(--saffron),var(--gold));color:#fff}
+.ms-btn.line{border:2px solid #fff;color:#fff;margin-left:10px}
+.ms-btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+
+/* HERO with crossfading photo carousel */
+.ms-hero{position:relative;min-height:88vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#3a0b0b}
+.ms-slide{position:absolute;inset:0;background-size:cover;background-position:center top;opacity:0;animation:msfade 18s infinite}
+.ms-slide:nth-child(1){background-image:linear-gradient(135deg,#5a1010,#a8541a);animation-delay:0s}
+.ms-slide:nth-child(2){background-image:linear-gradient(135deg,#3a0b0b,#7a2a14);animation-delay:6s}
+.ms-slide:nth-child(3){background-image:linear-gradient(135deg,#6e1414,#c79a3b);animation-delay:12s}
+/* To use photos: replace the three background-image lines above, e.g.  background-image:url('PHOTO_URL') */
+@keyframes msfade{0%{opacity:0}8%{opacity:1}33%{opacity:1}41%{opacity:0}100%{opacity:0}}
+.ms-hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(0,0,0,.05),rgba(20,4,4,.65));z-index:1}
+.ms-hero-in{position:relative;z-index:2;padding:80px 22px;max-width:780px}
+.ms-om{font-size:46px;color:var(--gold);margin-bottom:6px}
+.ms-hero h1{font-family:'Great Vibes','Brush Script MT',cursive;font-weight:400;font-size:clamp(72px,14vw,140px);letter-spacing:.01em;line-height:1;color:#fff}
+.ms-hero .ms-sub{font-family:'Cormorant Garamond',serif;font-style:normal;font-size:clamp(20px,3vw,28px);color:#f7e2b0;margin:12px 0 22px}
+.ms-hero .ms-sub em{font-style:italic}
+.ms-hero p{color:#fbeedd;max-width:620px;margin:0 auto 34px}
+
+/* intro */
+.ms-intro{background:var(--cream);padding:56px 0 96px}
+.ms-intro .ms-grid2{align-items:start}
+.ms-grid2{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}
+.ms-photo{aspect-ratio:4/5;border-radius:200px 200px 14px 14px;background:linear-gradient(160deg,#8b1a1a,#d9822b) center/cover;box-shadow:0 24px 50px rgba(110,20,20,.3);border:6px solid #fff}
+/* Replace the gradient with a photo:  background:url('PHOTO_URL') center/cover */
+.ms-intro h2{font-size:clamp(34px,5vw,50px);color:var(--maroon);margin-bottom:18px}
+.ms-intro p{margin:0 0 16px}
+.ms-intro .ms-eyebrow,.ms-intro h2,.ms-intro .ms-no{text-align:center}
+.ms-hl{color:var(--maroon);font-weight:700;border-bottom:2px solid var(--gold)}
+.ms-pull{margin:0 0 18px;padding-left:18px;border-left:3px solid var(--gold);font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(22px,3vw,28px);line-height:1.4;color:var(--maroon)}
+.ms-pull em{font-style:italic;font-weight:700;color:var(--saffron)}
+.ms-pull cite{display:block;text-align:right;margin-top:8px;font-family:'Lato',sans-serif;font-style:normal;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.ms-intro .ms-no{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:14px;color:var(--saffron);margin:0 0 22px}
+
+/* three paths */
+.ms-paths{padding:96px 0;background:var(--cream);text-align:center}
+.ms-paths h2{font-size:clamp(34px,5vw,50px);color:var(--maroon);margin-bottom:10px}
+.ms-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:50px;text-align:left}
+.ms-card{background:#fff;border-radius:16px;padding:40px 30px;border-top:4px solid var(--gold);transition:.35s;position:relative}
+.ms-card:hover{transform:translateY(-8px);box-shadow:0 22px 44px rgba(110,20,20,.16)}
+.ms-card .n{font-family:'Cormorant Garamond',serif;font-size:56px;color:var(--saffron);opacity:.5;line-height:1}
+.ms-card h3{font-size:32px;color:var(--maroon);margin:6px 0 4px}
+.ms-card em{display:block;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:19px;margin-bottom:14px}
+.ms-card a{color:var(--maroon);font-weight:700;text-decoration:none;letter-spacing:.06em;font-size:13px;text-transform:uppercase;border-bottom:2px solid var(--gold)}
+
+/* quote band */
+.ms-quote{background:linear-gradient(135deg,#4d0d0d,var(--maroon));color:#fff;text-align:center;padding:100px 22px}
+.ms-quote blockquote{margin:0 auto;max-width:800px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(28px,4.5vw,46px);line-height:1.35;color:#f7e2b0}
+.ms-quote cite{display:block;margin-top:22px;font-style:normal;letter-spacing:.3em;font-size:13px;color:var(--gold);text-transform:uppercase}
+
+/* presence */
+.ms-presence{background:#fff;padding:96px 0}
+.ms-feats{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:46px;text-align:center}
+.ms-feat .ic{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:linear-gradient(135deg,var(--saffron),var(--gold));color:#fff;font-size:28px;line-height:64px}
+.ms-feat h3{font-size:26px;color:var(--maroon);margin-bottom:8px}
+.ms-presence .ms-head{text-align:center;max-width:680px;margin:0 auto}
+.ms-presence h2{font-size:clamp(34px,5vw,50px);color:var(--maroon)}
+
+/* clinics + story */
+.ms-clinics{padding:96px 0;background:#fff}
+.ms-clinics .ms-box{background:var(--cream)}
+.ms-clinics h2,.ms-story h2{font-size:clamp(32px,4.5vw,46px);color:var(--maroon);margin-bottom:16px}
+.ms-clinics p{margin:0 0 16px}
+.ms-story{padding:96px 0;text-align:center;color:#fbeedd;background:radial-gradient(ellipse at 50% 0%,rgba(214,173,88,.2),transparent 62%),linear-gradient(145deg,#64131b 0%,var(--maroon) 55%,#260509 100%)}
+.ms-story .ms-wrap h2{color:#f7e2b0;margin-bottom:26px}
+.ms-story .ms-wrap h2::before{content:"";display:block;width:86px;height:1px;margin:0 auto 26px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.ms-story strong{color:#f7e2b0;font-weight:700}
+.ms-narrow{max-width:780px}
+.ms-story p{margin:0 0 16px}
+
+/* ashram + cta */
+.ms-ashram{padding:96px 0;background:var(--cream)}
+.ms-ashram .ms-box{background:#fff}
+.ms-ashram .ms-title{text-align:center;text-transform:uppercase;letter-spacing:.06em;margin-bottom:44px;font-weight:700;-webkit-text-stroke:.6px currentColor}
+.ms-ashram h3{font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:var(--maroon);margin:0 0 12px}
+.ms-block{max-width:780px;margin:0 auto}
+.ms-trustrow{margin-top:56px}
+.ms-acts{text-align:center;color:var(--maroon);font-weight:700;letter-spacing:.04em;font-size:19px;margin:0 0 26px}
+.ms-center{text-align:center}
+.ms-clinics .ms-title{text-align:center;text-transform:uppercase;letter-spacing:.06em;margin-bottom:44px;font-weight:700;-webkit-text-stroke:.6px currentColor}
+.ms-ashram h2{font-size:clamp(32px,4.5vw,46px);color:var(--maroon);margin-bottom:16px}
+.ms-box{background:var(--cream);border-radius:16px;padding:44px;border-left:5px solid var(--saffron)}
+.ms-cta{background:linear-gradient(135deg,var(--saffron),#b8651a);text-align:center;color:#fff;padding:84px 22px}
+.ms-cta h2{font-size:clamp(32px,4.5vw,46px);color:#fff;margin-bottom:12px;text-transform:uppercase;letter-spacing:.06em;font-weight:700;-webkit-text-stroke:.6px currentColor}
+.ms-cta p{max-width:560px;margin:0 auto 28px;color:#fff3e0}
+.ms-cta .ms-eyebrow{color:#fff3e0;margin:0 0 14px;max-width:none}
+.ms-form{background:#fff;color:var(--ink);text-align:left;border-radius:16px;padding:36px;margin:34px auto 0;max-width:640px;box-shadow:0 24px 50px rgba(0,0,0,.25)}
+.ms-form .ms-lbl,.ms-form legend{display:block;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--maroon);margin:0 0 8px;padding:0}
+.ms-form input[type=email]{width:100%;padding:14px 16px;border:1.5px solid #e2cfa6;border-radius:10px;font:inherit;color:var(--ink);background:#fffdf8;margin-bottom:24px}
+.ms-form input[type=email]:focus{outline:2px solid var(--saffron);border-color:var(--saffron)}
+.ms-form fieldset{border:0;margin:0 0 22px;padding:0}
+.ms-checks{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}
+.ms-checks label,.ms-consent{display:flex;gap:10px;align-items:flex-start;line-height:1.5;font-size:16px;cursor:pointer}
+.ms-form input[type=checkbox]{width:19px;height:19px;margin-top:3px;accent-color:var(--saffron);flex:none}
+.ms-consent{font-size:14px;margin-bottom:20px;color:#5b463a}
+.ms-consent a{color:var(--maroon);font-weight:700}
+.ms-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ms-form .cf-turnstile{margin-bottom:22px}
+.ms-form .ms-btn{border:0;cursor:pointer;font-family:inherit;background:linear-gradient(135deg,var(--saffron),var(--gold));color:#fff}
+.ms-cta .ms-msg{margin-top:16px;font-size:15px;font-weight:700;min-height:1em}
+.ms-cta .ms-msg.err{color:#a11d1d}
+.ms-cta .ms-msg.ok{color:#1b6b3a}
+.ms-legal{margin-bottom:10px}
+.ms-legal a{color:#f7e2b0;text-decoration:none;border-bottom:1px solid rgba(214,173,88,.5)}
+.ms-foot{background:#2b0808;color:#e6cfa0;text-align:center;padding:36px 22px;font-size:15px}
+.ms-foot b{display:block;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;font-style:italic;color:#ecd7a6;letter-spacing:.04em;margin-bottom:6px}
+
+.ms-note{max-width:560px;margin:14px auto 20px;font-size:14px;font-style:italic;color:#d3b987;line-height:1.7}
+.ms-note span{display:block;font-style:normal;letter-spacing:.3em;font-size:11px;font-weight:700;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+
+@media(max-width:820px){
+ .ms-grid2,.ms-cards,.ms-feats{grid-template-columns:1fr}
+ .ms-photo{max-width:340px;margin:0 auto}
+ .ms-intro,.ms-paths,.ms-presence,.ms-ashram,.ms-clinics,.ms-story{padding:64px 0}
+ .ms-btn.line{margin:12px 0 0}
+ .ms-checks{grid-template-columns:1fr}
+ .ms-form{padding:26px 20px}
+ .ms-box{padding:30px 22px}
+}
+
+/* ===== MOBILE OPTIMISATION ===== */
+@media(max-width:600px){
+ .ms-root{font-size:16px;line-height:1.7}
+ .ms-wrap{padding:0 20px}
+ .ms-hero{min-height:0}
+ .ms-hero-in{padding:64px 20px 56px}
+ .ms-om{font-size:36px}
+ .ms-hero h1{font-size:62px}
+ .ms-hero .ms-sub{font-size:20px;line-height:1.35}
+ .ms-hero p{font-size:16px;margin-bottom:26px}
+ .ms-btn{padding:13px 24px;font-size:13px}
+ .ms-hero .ms-btn{display:block;max-width:300px;margin:12px auto 0}
+ .ms-hero .ms-btn.gold{margin-top:0}
+ .ms-intro,.ms-paths,.ms-presence,.ms-ashram,.ms-clinics,.ms-story{padding:46px 0}
+ .ms-quote{padding:56px 20px}
+ .ms-quote blockquote{font-size:26px}
+ .ms-cta{padding:56px 0}
+ .ms-cta .ms-wrap{padding:0 12px}
+ .ms-cta p{padding:0 8px}
+ .ms-intro h2,.ms-paths h2,.ms-presence h2,.ms-ashram h2,.ms-clinics h2,.ms-story h2,.ms-cta h2{font-size:30px}
+ .ms-ashram .ms-title,.ms-clinics .ms-title{margin-bottom:28px}
+ .ms-pull{font-size:22px}
+ .ms-grid2{gap:28px}
+ .ms-photo{max-width:270px}
+ .ms-cards{gap:18px;margin-top:30px}
+ .ms-card{padding:26px 22px}
+ .ms-card h3{font-size:29px}
+ .ms-feats{gap:30px;margin-top:30px}
+ .ms-box{padding:24px 20px}
+ .ms-acts{font-size:17px}
+ .ms-trustrow{margin-top:40px}
+ .ms-form{padding:22px 14px}
+ .ms-checks{gap:14px}
+ .ms-checks label,.ms-consent{font-size:15px}
+ .ms-form input[type=checkbox]{width:22px;height:22px}
+ .ms-form .ms-btn{width:100%;white-space:normal}
+ .ms-foot{padding:30px 20px}
+ .ms-note{font-size:14px}
+}
+@media(max-width:360px){
+ .ms-wrap{padding:0 16px}
+ .ms-hero-in{padding:56px 16px 48px}
+ .ms-hero h1{font-size:54px}
+ .ms-hero .ms-sub{font-size:18px}
+}
+</style>
 </head>
 <body>
-  <main aria-label="Mataji">
-    <svg class="lotus" viewBox="0 0 120 100" role="img" aria-label="Lotus flower" xmlns="http://www.w3.org/2000/svg">
-      <g fill="#e6c474" stroke="#f7dfa0" stroke-width="1.2" stroke-linejoin="round">
-        <path d="M60 82 C43 65 43 37 60 10 C77 37 77 65 60 82Z"/>
-        <path d="M55 82 C32 72 20 49 25 28 C47 39 58 60 55 82Z"/>
-        <path d="M65 82 C88 72 100 49 95 28 C73 39 62 60 65 82Z"/>
-        <path d="M49 84 C26 84 10 70 5 52 C29 53 44 65 49 84Z"/>
-        <path d="M71 84 C94 84 110 70 115 52 C91 53 76 65 71 84Z"/>
-        <path d="M60 84 C43 91 27 90 15 81 C34 75 48 77 60 84Z"/>
-        <path d="M60 84 C77 91 93 90 105 81 C86 75 72 77 60 84Z"/>
-      </g>
-      <path d="M19 91 Q60 98 101 91" fill="none" stroke="#d6ad58" stroke-width="2" stroke-linecap="round"/>
-    </svg>
+<div class="ms-root">
+
+<!-- ===== HERO ===== -->
+<section class="ms-hero">
+  <div class="ms-slide"></div><div class="ms-slide"></div><div class="ms-slide"></div>
+  <div class="ms-hero-in">
+    <div class="ms-om">ॐ</div>
     <h1>Mataji</h1>
-    <div class="ornament" aria-hidden="true"></div>
-  </main>
+    <div class="ms-sub">Ma Someshwari Devi &nbsp;·&nbsp; a <em>Presence</em> that dissolves the seeker</div>
+    <p>To her devotees she is simply <strong>Mataji</strong>, their Spiritual Master and Guru. Her grace has touched thousands through her healing presence, satsangs and darshan, and through a silence that speaks louder than words.</p>
+    <a class="ms-btn gold" href="#ms-essence">Know Mataji</a>
+    <a class="ms-btn line" href="#ms-visit">Programs &amp; Darshan</a>
+  </div>
+</section>
+
+<!-- ===== INTRO ===== -->
+<section class="ms-intro" id="ms-essence">
+  <div class="ms-wrap ms-grid2">
+    <div class="ms-photo"></div>
+    <div>
+      <h2>GRACE</h2>
+      <blockquote class="ms-pull">“Even with a moment of Truth within you, <em>Anything</em> is possible.”<cite>— Mataji</cite></blockquote>
+      <p class="ms-no" style="margin-bottom:0">No Kriyas, Mantras, Yoga or Sadhana<br>Surrender to the Existence</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HER PATH ===== -->
+<section class="ms-story">
+  <div class="ms-wrap ms-narrow">
+    <h2>Not a Guru of the jungle, but a light for the world.</h2>
+    <p>Born in the Himalayan foothills, she is <strong>Monika</strong> to her family, <strong>Dr. Monika Parsheera</strong> to her patients, <strong>Ma Someshwari Devi</strong> to Sadhus, Sants and Pirs, and Mataji to her followers and devotees. Mataji walks a path for the 21st century.</p>
+    <p>She lives within society, never above it, and guides seekers to move through life with awareness, to enjoy it, and to see it for what it is. Hers is a practical road, never extreme.</p>
+    <p>In her presence, guards drop, hearts open, and the seeker rises effortlessly, like boats lifted by a rising tide.</p>
+  </div>
+</section>
+
+<!-- ===== THREE PATHS ===== -->
+<section class="ms-paths" id="ms-paths">
+  <div class="ms-wrap">
+    <h2>Three Doors to One Truth</h2>
+    <div class="ms-cards">
+      <div class="ms-card"><div class="n">01</div><h3>The Human</h3><em>Before she was Mataji, she was Monika.</em><p>A village girl from a Rajput family of the Pir Panjal range in the Himalayas.</p><a href="three-doors.html">Read her story</a></div>
+      <div class="ms-card"><div class="n">02</div><h3>The Divine</h3><em>Everyone saw it. She refused to claim it.</em><p>The saints who recognised her, the banks of the Ganga, and the grace that draws seekers from far and wide.</p><a href="three-doors.html">Enter the grace</a></div>
+      <div class="ms-card"><div class="n">03</div><h3>The Eternal</h3><em>Liberation is for here and now.</em><p>A living state of awareness and equanimity, the drop merging with the infinite while still in the body.</p><a href="three-doors.html">Understand the path</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRESENCE ===== -->
+<section class="ms-presence">
+  <div class="ms-wrap">
+    <div class="ms-head"><p class="ms-eyebrow">Her Presence</p><h2>Where understanding replaces judgement</h2></div>
+    <div class="ms-feats">
+      <div class="ms-feat"><div class="ic">☀</div><h3>Light</h3><p>Feel yourself grow light, without any effort of your own.</p></div>
+      <div class="ms-feat"><div class="ic">♡</div><h3>Compassion</h3><p>More than forgiving, Mataji understands. You can show your true face without fear.</p></div>
+      <div class="ms-feat"><div class="ic">❂</div><h3>Silence</h3><p>Sitting quietly with Mataji is a conversation in itself. Presence alone transforms.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ASHRAM ===== -->
+<section class="ms-ashram">
+  <div class="ms-wrap">
+    <h2 class="ms-title">Himalaya Niketan</h2>
+    <div class="ms-block">
+      <h3>The Ashram</h3>
+      <p style="margin-bottom:8px">When seekers began living near her home in the hope of becoming her disciples, the Himalaya Niketan Ashram was born. Today it carries out many spiritual and other activities;</p>
+      <p class="ms-acts">Satsang &nbsp;·&nbsp; Bhajan &nbsp;·&nbsp; Yoga &nbsp;·&nbsp; Ayurveda &nbsp;·&nbsp; Silent Sitting</p>
+      <div><a class="ms-btn gold" href="#ms-visit">Register Interest</a></div>
+    </div>
+    <div class="ms-block ms-trustrow">
+      <h3>The Trust</h3>
+      <p>Beyond the Ashram, Mataji also runs the Himalaya Niketan Charitable Trust, which exists for one reason: <span class="ms-hl">to serve</span>. Through free health camps, free spiritual books, service of sadhus and saints, and gau seva, it reaches those in need. There is no business here, only offering.</p>
+      <div style="margin-top:26px"><a class="ms-btn gold" href="charitable-trust.html">Discover Our Seva</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLINICS ===== -->
+<section class="ms-clinics">
+  <div class="ms-wrap">
+    <p class="ms-eyebrow" style="text-align:center">Goa &amp; Rishikesh</p>
+    <h2 class="ms-title">Himalaya Niketan Clinics</h2>
+    <div class="ms-grid2">
+    <div>
+      <p>Himalaya Niketan also runs clinics in Goa and Rishikesh, offering Nadi Chikitsa and wellness consultation. The clinics are separate from the charitable trust, and consultation fees apply.</p>
+      <p>What the clinics earn goes to seva. Mataji donates the income earned at the clinics to the Himalaya Niketan Charitable Trust, which funds free health camps, free spiritual books, service of sadhus and saints, and gau seva.</p>
+    </div>
+    <div class="ms-box">
+      <p class="ms-eyebrow">Please note</p>
+      <p style="margin:0">Mataji’s availability at the clinics is seasonal and spontaneous. At her own discretion, she may attend to someone in need, but this cannot be requested or assured.</p>
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== QUOTE ===== -->
+<section class="ms-quote">
+  <blockquote>“Sabke liye sab nahi hai.”<br><span style="font-size:.55em;color:#fbeedd">Every path unfolds in its own time.</span></blockquote>
+  <cite>Mataji</cite>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="ms-cta" id="ms-visit">
+  <div class="ms-wrap ms-narrow">
+    <p class="ms-eyebrow">Programs &amp; Retreats</p>
+    <h2>Journey with Mataji</h2>
+    <p>Since 2016, at the request of her devotees, Mataji has been conducting programs across the world.</p>
+    <p>Whether you seek answers, peace, or simply a few quiet moments, leave your email and we will let you know about upcoming programs and retreats.</p>
+    <form class="ms-form" id="ms-signup" novalidate>
+      <label class="ms-lbl" for="ms-email">Your email address</label>
+      <input type="email" id="ms-email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <fieldset>
+        <legend>I am interested in</legend>
+        <div class="ms-checks">
+        <label><input type="checkbox" name="interests[]" value="Yoga"> Yoga</label>
+        <label><input type="checkbox" name="interests[]" value="Healing"> Healing</label>
+        <label><input type="checkbox" name="interests[]" value="Meditation with Mataji"> Meditation with Mataji</label>
+        <label><input type="checkbox" name="interests[]" value="Vipassana Retreat"> Vipassana Retreat</label>
+        <label><input type="checkbox" name="interests[]" value="Satsang / Darshan"> Satsang / Darshan</label>
+        <label><input type="checkbox" name="interests[]" value="Spiritual Tour with Mataji"> Spiritual Tour with Mataji</label>
+        </div>
+      </fieldset>
+      <div class="ms-hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <label class="ms-consent"><input type="checkbox" name="consent" value="yes" required> <span>I agree to receive emails about upcoming programs and retreats, and I have read the <a href="legal.html#privacy-policy">Privacy Policy</a>. I can unsubscribe at any time.</span></label>
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAFgfWVMc2zk3hrf9" data-theme="light"></div>
+      <button class="ms-btn gold" type="submit">Kindly Keep Me Informed</button>
+      <div class="ms-msg" id="ms-msg" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer class="ms-foot">
+  <b>॥ Mataji Ki Jai ॥</b>
+  <div class="ms-note"><span>A Humble Note</span>This website is lovingly made by Mataji’s devotees as an offering of seva. Any errors or shortcomings are entirely our own and should never reflect upon Mataji in any way.</div>
+  <div class="ms-legal"><a href="legal.html#privacy-policy">Privacy Policy</a> &nbsp;·&nbsp; <a href="legal.html#terms">Terms &amp; Conditions</a></div>
+  © 2026 srimataji.com
+</footer>
+
+<script>
+document.querySelectorAll('.ms-root a[href^="#"]').forEach(function(a){a.addEventListener("click",function(e){var t=document.querySelector(a.getAttribute("href"));if(t){e.preventDefault();t.scrollIntoView({behavior:"smooth",block:"start"});}});});
+</script>
+<script>document.querySelectorAll(".cf-turnstile").forEach(function(e){var local=location.protocol==="file:"||location.hostname==="localhost"||location.hostname==="127.0.0.1";e.setAttribute("data-sitekey",local?"1x00000000000000000000AA":"0x4AAAAAAFgfWVMc2zk3hrf9");if(window.innerWidth<360)e.setAttribute("data-size","compact");});</script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script>
+(function(){
+/* ===== GOOGLE FORM SETTINGS: replace the four YOUR_... values (see setup steps) ===== */
+var GF={
+  url:"https://docs.google.com/forms/d/e/1FAIpQLSf3GdAaa6Kl-qfi3UzWxw2OJiuwKk9F2nkZ_Ukgt8PmdR7SxQ/formResponse",
+  email:"entry.1216078549",
+  interests:"entry.1815156974",
+  consent:"entry.313555088",
+  consentText:"I agree to receive emails about upcoming programs and retreats"
+};
+/* ===== end of settings ===== */
+var f=document.getElementById("ms-signup");if(!f)return;
+var m=document.getElementById("ms-msg");
+function say(t,err){m.textContent=t;m.className="ms-msg "+(err?"err":"ok");}
+f.addEventListener("submit",function(e){
+e.preventDefault();
+if(f.website.value){return;}
+var email=f.email.value.trim();
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){say("Please enter a valid email address.",1);return;}
+var picked=f.querySelectorAll('input[name="interests[]"]:checked');
+if(!picked.length){say("Please choose at least one area of interest.",1);return;}
+if(!f.consent.checked){say("Please tick the consent box to continue.",1);return;}
+var t=f.querySelector('[name="cf-turnstile-response"]');
+if(!t||!t.value){say("Please complete the security check.",1);return;}
+if(GF.url.indexOf("YOUR_")>-1){say("This form is not connected yet. Add your Google Form details first.",1);return;}
+var body=new URLSearchParams();
+body.append(GF.email,email);
+picked.forEach(function(c){body.append(GF.interests,c.value);});
+body.append(GF.consent,GF.consentText);
+say("Sending...",0);
+fetch(GF.url,{method:"POST",mode:"no-cors",body:body})
+.then(function(){f.reset();if(window.turnstile)turnstile.reset();say("Thank you. You are on the list, and we will be in touch about upcoming programs and retreats.",0);})
+.catch(function(){say("Something went wrong. Please try again in a moment.",1);});
+});
+})();
+</script>
+
+</div>
 </body>
 </html>
